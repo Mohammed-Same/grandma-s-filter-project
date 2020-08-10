@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Kaushan Script", cursive;
+
+}
+header{
+    background-color: white;
+    height: 12vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    margin-left: -20px;
+}
+.logo{
+    margin-left: -130px;
+}
+li{
+    list-style: none;
+    outline: none;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #ef7998;
+}
+a:hover{
+    color: black;
+}
+
+.ryt{
+    display: flex;
+
+
+
+}
+.number{
+    
+    font-size: 20px;
+    margin-right: 80px;
+}
+.cart{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 13px;
+}
+.cart:hover{
+    background-color:#ef7998 ;
+    color: white;
+    cursor: pointer;
+}
+
+
+.bg-img{
+    min-height: calc(100vh - 76px);
+        background:linear-gradient(rgba(249, 228, 148, 0.5),rgba(249, 228, 148, 0.5)),
+          url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+        position: relative;
+}
+h1{
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   color: white;
+   font-weight: 100;
+   font-size: 40px;
+    
+
+}
+strong{
+    font-size: 70px;
+    font-weight:700;
+    color: #ef7998;
+}
+.Welcome-explore{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 23px;
+    background: transparent;
+    width: 15%;
+    height: 55px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Kaushan Script", cursive;
+
+}
+.Welcome-explore:hover{
+    background-color: black;
+    cursor: pointer;
+    color:#ef7998;
+    
+}
+.About{
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 1fr;
+    padding: 58px;
+}
+h2{
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 75px;
+}
+.lorem{
+    font-size: 22px;
+    font-weight: 100;
+    color : rgb(184, 157, 157);
+}
+.about-explore{
+    margin-top: 20px;
+    font-size: 20px;
+    background: transparent;
+    width: 20%;
+    height: 55px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Kaushan Script", cursive;
+    cursor: pointer;
+
+}
+.about-explore:hover{
+    background-color: black;
+    color: #ef7998;
+}
+.about_img{
+    width: 600px;
+    height: 450px;
+    margin: 30px;
+}
+.about_img:hover{
+
+    animation: box 2s ease-in-out;
+    cursor: pointer;
+}
+@keyframes box{
+    100%{
+        margin:-10px;
+        padding: 13px;
+    }
+}
+
+.box{
+    width: 600px;
+    height: 450px;
+    border: 8px solid rgb(205, 164, 50);
+}
+.Store{
+    background-color:rgb(238, 238, 238);
+    height:auto;
+}
+h3{
+    font-size: 53px;
+    font-weight: 100;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.btn{
+    width: 100px;
+    height: 45px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-family: "Kaushan Script", cursive;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+    color: #ef7998;
+}
+.Search-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.Search-bar i{
+    background-color: #ef7998;
+    width:40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 2px;
+
+}
+input{
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    font-family: "Kaushan Script", cursive;
+    border-radius:0px 8px 8px 0px;
+    border: 1px solid;
+    font-size: 15px;
+    font-weight: bolder;
+    
+
+}
+.All{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    margin-left: 100px;
+    margin-top: 40px;
+
+    
+}
+.item{
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    transition: all 2s ease-in-out;
+    position: relative;
+    z-index:1;
+    
+   
+}
+.item-box:hover{
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+
+}
+h4{
+    font-size: 25px;
+    font-weight: 100;
+  padding: 20px;
+  
+}
+h4 span{
+    margin-left:160px;
+}
+
+.item-box{
+    border: 0.1px solid hidden;
+    width: 350px;
+    background-color:white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+   
+}
+.nav-btn{
+    display: none;
+}
+
+@media (max-width:500px){
+  .ryt{
+      display: none;
+  }
+  .nav-btn{
+    display: block;
+    position: absolute;;
+    right: 10%;
+    top: 2%;
+    width: 10%;
+    height: 30px;
+    background-color: #ef7998;
+    z-index: 0;
+    color:white;
+    cursor: pointer;
+    border: hidden;
+    border-radius:6px;
+    outline: hidden;
+
+}
+  header{
+      display: block;
+      height: 190px;
+      margin-left: 40px;
+  }
+  .logo{
+      margin-left: 0;
+  }
+  .nav{
+      display: none;
+  }
+    .Welcome-explore{
+        width: 130px;
+        margin-top: 30px;
+    }
+    .About{
+        display: block;
+    }
+    .lorem{
+        font-size: 18px;
+    }
+    .about-explore{
+        width: 130px;
+    }
+    .about_img{
+        width: 250px;
+        height: 250px;
+        margin: 10px;
+    }
+    
+    .box{
+        width: 250px;
+        height: 250px;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .button{
+        display:block;
+    }
+    .btn{
+        margin-left: 13px;
+        margin-top: 10px;
+    }
+    .Search-bar{
+        border-radius: 0px;
+        
+    }
+    input{
+        width: 80%;
+    }
+    .All{
+        display: block;
+        margin-left: 3px;
+        
+       
+    }
+    .item-box:hover{
+        transform: none;
+    }
+    
+}
+
